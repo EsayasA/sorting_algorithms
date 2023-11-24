@@ -13,17 +13,17 @@ void swapping(int *n1, int *n2)
 	*n2 = tmp;
 }
 /**
- * sorting - put in ascending ordr
- * @arr:array
+ * bubble_sort - put in ascending ordr
+ * @array:array
  * @size:array size
  * Description: display after swapping
  */
-void sorting(int *arr, size_t size)
+void bubble-sort(int *array, size_t size)
 {
 	size_t j, len = size;
 	bool bub = false;
 
-	if (arr == NULL || size < 2)
+	if (array == NULL || size < 2)
 		return;
 
 	while (bub == false)
@@ -33,8 +33,8 @@ void sorting(int *arr, size_t size)
 		{
 			if (array[j] > array[j + 1])
 			{
-				swapping(arr + j, arr + j + 1);
-				print_array(arr, size);
+				swapping(array + j, array + j + 1);
+				print_array(array, size);
 				bub = false;
 			}
 		}
