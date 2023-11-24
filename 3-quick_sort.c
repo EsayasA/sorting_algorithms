@@ -31,7 +31,7 @@ int sub_set(int *arr, size_t size, int start, int end)
 	pv = arr + end;
 	for (ab = be = start; be < end; be++)
 	{
-		if (array[be] < *pv)
+		if (arr[be] < *pv)
 		{
 			if (ab < be)
 			{
@@ -42,7 +42,7 @@ int sub_set(int *arr, size_t size, int start, int end)
 		}
 	}
 
-	if (array[ab] > *pv)
+	if (arr[ab] > *pv)
 	{
 		to_swap(arr + ab, pv);
 		print_array(arr, size);
