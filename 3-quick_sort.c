@@ -1,7 +1,7 @@
 #include "sort.h"
 void to_swap(int *n1, int *n2);
-int lomuto_partition(int *array, size_t size, int left, int right);
-void lomuto_sort(int *array, size_t size, int left, int right);
+int sub_set(int *arr, size_t size, int start, int end);
+void recurse_sort(int *arr, size_t size, int start, int end);
 void quick_sort(int *array, size_t size);
 /**
  * to_swap - to swap two elements
