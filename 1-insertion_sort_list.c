@@ -13,7 +13,7 @@ void nod_swap(listint_t **p, listint_t **a, listint_t *b)
 	b->prev = (*a)->prev;
 	b->next = *a;
 	if ((*a)->prev != NULL)
-		(*b)->prev->next = b;
+		(*a)->prev->next = b;
 	else
 		*p = b;
 	(*a)->prev = b;
