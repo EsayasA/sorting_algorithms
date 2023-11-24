@@ -18,7 +18,7 @@ void swapping(int *n1, int *n2)
  * @size:array size
  * Description: display after swapping
  */
-void bubble-sort(int *array, size_t size)
+void bubble_sort(int *array, size_t size)
 {
 	size_t j, len = size;
 	bool bub = false;
